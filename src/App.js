@@ -50,6 +50,7 @@ function App() {
   const handleGetStarted = () => {
     if (difficulty && choosedCategories?.length > 0) {
       setQNo(0);
+      setChoosedCategories([]);
       dispatch(
         getQuestions(
           {
