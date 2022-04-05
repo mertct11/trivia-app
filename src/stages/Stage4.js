@@ -9,26 +9,26 @@ function Stage4({ qNo, setQNo, DEFAULT_QUESTION_COUNT, qPoint, setStage }) {
   };
 
   return (
-    <div class="page">
-      <div class="top-container">
-        <span class="top-child">
+    <div className="page">
+      <div className="top-container">
+        <span className="top-child">
           <span className="col-primary">{qNo + 1} </span>/
           {DEFAULT_QUESTION_COUNT}
         </span>
-        <img class="top-child icon-st2" src={logo} alt="logo" />
+        <img className="top-child icon-st2" src={logo} alt="logo" />
       </div>
-      <div class=" correct-container">
-        <span class="correct-text animate__animated animate__bounce col-green">
+      <div className=" correct-container">
+        <span className="correct-text animate__animated animate__bounce col-green">
           CORRECT !
         </span>
-        <span class="earned-text animate__animated animate__bounce">
-          You have earned <span class="col-green">{qPoint}</span> points
+        <span className="earned-text animate__animated animate__bounce">
+          You have earned <span className="col-green">{qPoint}</span> points
         </span>
-        <span class="earned-text animate__animated animate__bounce">
+        <span className="earned-text animate__animated animate__bounce">
           Total : {qPoint * (qNo + 1)} points
         </span>
         <button
-          class="correct-answer-btn"
+          className="correct-answer-btn"
           onClick={() => {
             handleNextQuestion();
           }}
