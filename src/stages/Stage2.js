@@ -63,7 +63,6 @@ function Stage2({
           Remaining Time: 00:<span className="col-red">{leftTime}</span>
         </span>
       </div>
-      {questions[qNo]?.correct_answer}
       <div className=" question-container">
         <span className="question-text">{questions[qNo]?.question}</span>
 
