@@ -1,0 +1,86 @@
+.App {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 80%;
+  border: 2px solid #949398ff;
+  border-top-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.top-container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0px 2%; */
+  border-bottom: 2px solid #949398ff;
+}
+.top-child {
+  width: 25%;
+  text-align: center;
+}
+
+.icon-st2 {
+  height: 70px;
+  width: 70px;
+}
+
+.correct-container {
+  height: 330px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.correct-text {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.earned-text {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.correct-answer-btn {
+  width: 50%;
+  height: 40px;
+  margin-top: 10px;
+
+  border: 1px solid #949398ff;
+  border-top-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: #f4df4eff;
+  color: #949398ff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.col-red {
+  color: red;
+}

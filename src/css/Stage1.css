@@ -1,0 +1,113 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 80%;
+  border: 2px solid #949398ff;
+  border-top-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.icon-container {
+  height: 140px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  height: 140px;
+  width: 140px;
+}
+.title-container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: xx-large;
+  font-weight: 600;
+  color: #f4df4eff;
+}
+
+.settings-container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings-sub-container {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 4px;
+  width: 49%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.settings-line {
+  width: 3px;
+  height: 100%;
+  background-color: #f4df4eff;
+}
+
+.difficulty-input-container {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.settings-category-select {
+  width: 100%;
+}
+
+.get-started-container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.get-started-btn {
+  width: 50%;
+  height: 75px;
+  padding: 10px;
+  margin: 30px 0px auto;
+
+  border: 1px solid #949398ff;
+  border-top-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: #f4df4eff;
+  color: #949398ff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.error-container {
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  color: red;
+  margin-top: 5px;
+  font-size: 17px;
+}
+@media (max-width: 600px) {
+  .page {
+    width: 80%;
+  }
+  .difficulty-input-container {
+    margin: 0px;
+  }
+}
