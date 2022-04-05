@@ -5,13 +5,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllCategories, getQuestions } from "./actions";
 
 import React, { useState, useEffect } from "react";
-
-const difficulties = ["easy", "medium", "hard"];
+import difficulties from "./utils/difficulties";
 const DEFAULT_QUESTION_COUNT = 10; // 10 question default
 const DEFAULT_QUESTION_TYPE = "multiple"; // 10 question default
 const EASY_POINT = 100;
 const MED_POINT = 200;
 const HARD_POINT = 300;
+
 function App() {
   const [stage, setStage] = useState(1);
   const [difficulty, setDifficulty] = useState(difficulties[0]); // default value "easy"
@@ -19,8 +19,9 @@ function App() {
   const [qNo, setQNo] = useState(0); // DEFAULT easy choosen
   const [choosedCategories, setChoosedCategories] = useState([]);
   const [error, setError] = useState(false);
-  const dispatch = useDispatch();
   const { allCategories, questions } = useSelector((state) => state);
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     if (!allCategories) {

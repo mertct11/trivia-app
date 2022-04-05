@@ -1,5 +1,5 @@
 import "../css/Stage3.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import logo from "../logo.svg";
 function Stage3({ qNo, DEFAULT_QUESTION_COUNT, qPoint, setStage }) {

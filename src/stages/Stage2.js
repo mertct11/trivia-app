@@ -1,13 +1,6 @@
 import "../css/Stage2.css";
 import React, { useState, useEffect } from "react";
-function Stage2({
-  questions,
-  qNo,
-  setQNo,
-  DEFAULT_QUESTION_COUNT,
-  qPoint,
-  setStage,
-}) {
+function Stage2({ questions, qNo, DEFAULT_QUESTION_COUNT, qPoint, setStage }) {
   const [leftTime, setLeftTime] = useState(15);
   const [answers, setAnswers] = useState([]);
   useEffect(() => {
