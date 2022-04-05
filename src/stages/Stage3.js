@@ -1,6 +1,6 @@
 import "../css/Stage3.css";
 import React from "react";
-
+import "animate.css";
 import logo from "../logo.svg";
 function Stage3({ qNo, DEFAULT_QUESTION_COUNT, qPoint, setStage }) {
   const handleRestart = () => {
@@ -8,27 +8,27 @@ function Stage3({ qNo, DEFAULT_QUESTION_COUNT, qPoint, setStage }) {
   };
 
   return (
-    <div class="page">
-      <div class="top-container">
-        <span class="top-child">
+    <div className="page">
+      <div className="top-container">
+        <span className="top-child">
           <span className="col-primary">{qNo + 1} </span>/
           {DEFAULT_QUESTION_COUNT}
         </span>
-        <img class="top-child icon-st2" src={logo} alt="logo" />
+        <img className="top-child icon-st2" src={logo} alt="logo" />
       </div>
-      <div class=" correct-container">
-        <span class="correct-text animate__animated animate__bounce col-red">
+      <div className=" correct-container">
+        <span className="correct-text animate__animated animate__bounce col-red">
           WRONG !
         </span>
-        <span class="earned-text animate__animated animate__bounce">
-          You earned <span class="col-red">{qPoint * qNo}</span> points.. You
-          can start again if you want.
+        <span className="earned-text animate__animated animate__bounce">
+          You earned <span className="col-red">{qPoint * qNo}</span> points..
+          You can start again if you want.
         </span>
         <button
           onClick={() => {
             handleRestart();
           }}
-          class="correct-answer-btn"
+          className="correct-answer-btn"
         >
           Restart
         </button>
