@@ -30,19 +30,19 @@ function Stage1({
     }),
   };
   return (
-    <div class="page">
-      <div class="icon-container">
-        <img src={logo} class="icon" alt="logo" />
+    <div className="page">
+      <div className="icon-container">
+        <img src={logo} className="icon" alt="logo" />
       </div>
-      <div class="title-container">
-        <span class="title">TRIVIA APP</span>
+      <div className="title-container">
+        <span className="title">TRIVIA APP</span>
       </div>
-      <div class="settings-container">
-        <div class="settings-sub-container">
+      <div className="settings-container">
+        <div className="settings-sub-container">
           {difficulties?.map((i, key) => {
             return (
               <div
-                class="difficulty-input-container"
+                className="difficulty-input-container"
                 key={key}
                 onClick={(e) => {
                   setDifficulty(difficulties[key]);
@@ -58,8 +58,8 @@ function Stage1({
             );
           })}
         </div>
-        <div class="settings-line "></div>
-        <div class="settings-sub-container">
+        <div className="settings-line "></div>
+        <div className="settings-sub-container">
           <div className="settings-category-select">
             <Select
               closeMenuOnSelect={true}
@@ -74,9 +74,9 @@ function Stage1({
           </div>
         </div>
       </div>
-      <div class="get-started-container">
+      <div className="get-started-container">
         <button
-          class="get-started-btn"
+          className="get-started-btn"
           onClick={() => {
             handleGetStarted();
           }}
@@ -85,8 +85,10 @@ function Stage1({
         </button>
       </div>
       {error && (
-        <div class="error-container">
-          <span class="error">Be sure choosed category and difficulty!</span>
+        <div className="error-container">
+          <span className="error">
+            Be sure choosed category and difficulty!
+          </span>
         </div>
       )}
     </div>

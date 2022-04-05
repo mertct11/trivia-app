@@ -29,18 +29,13 @@ function Stage2({ questions, qNo, DEFAULT_QUESTION_COUNT, qPoint, setStage }) {
       .concat(questions[qNo]?.incorrect_answers)
       .sort((a, b) => 0.5 - Math.random());
 
-    console.log({ shuffledAnswersArr });
-
     setAnswers(shuffledAnswersArr);
   };
 
   const handleChoosingAnswer = (a) => {
     if (questions[qNo]?.correct_answer == a) {
       setStage(4); // to success page
-
-      console.log("true");
     } else {
-      console.log("false");
       setStage(3); // to wrong page
     }
   };

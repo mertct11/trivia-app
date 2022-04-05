@@ -6,7 +6,6 @@ export function getAllCategories(postId) {
   return async function (dispatch) {
     const url = "/api_category.php";
     const res = await axios(url);
-    console.log(res);
     return dispatch({
       type: "GET_ALL_CATEGORIES",
       payload: res?.data?.trivia_categories,
@@ -33,7 +32,6 @@ export function getQuestions(obj, choosedCategories) {
     var queryString = objectToQueryString(obj);
     var resURL = url + searchURL.concat(queryString);
     const res = await axios(resURL);
-    console.log(res);
     return dispatch({
       type: "GET_QUESTIONS",
       payload: res?.data?.results,
